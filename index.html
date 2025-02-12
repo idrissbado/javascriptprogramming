@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Functions</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+  <div class="container mx-auto p-6">
+    <h1 class="text-4xl font-bold text-center mb-8">JavaScript Functions</h1>
+
+    <!-- String Manipulation -->
+    <section class="mb-8">
+      <h2 class="text-2xl font-bold mb-4">String Manipulation</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Reverse a String -->
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-bold mb-4">Reverse a String</h3>
+          <input type="text" id="reverseInput" placeholder="Enter a string" class="w-full p-2 border rounded-lg mb-4">
+          <button onclick="reverseString()" class="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600">Reverse</button>
+          <p class="mt-4">Result: <span id="reverseResult" class="font-bold"></span></p>
+        </div>
+
+        <!-- Count Characters -->
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-bold mb-4">Count Characters</h3>
+          <input type="text" id="countInput" placeholder="Enter a string" class="w-full p-2 border rounded-lg mb-4">
+          <button onclick="countCharacters()" class="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600">Count</button>
+          <p class="mt-4">Result: <span id="countResult" class="font-bold"></span></p>
+        </div>
+
+        <!-- Capitalize Words -->
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-bold mb-4">Capitalize Words</h3>
+          <input type="text" id="capitalizeInput" placeholder="Enter a sentence" class="w-full p-2 border rounded-lg mb-4">
+          <button onclick="capitalizeWords()" class="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600">Capitalize</button>
+          <p class="mt-4">Result: <span id="capitalizeResult" class="font-bold"></span></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Array Functions -->
+    <section class="mb-8">
+      <h2 class="text-2xl font-bold mb-4">Array Functions</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Find Maximum -->
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-bold mb-4">Find Maximum</h3>
+          <input type="text" id="maxInput" placeholder="Enter numbers (e.g., 1,2,3)" class="w-full p-2 border rounded-lg mb-4">
+          <button onclick="findMax()" class="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600">Find Max</button>
+          <p class="mt-4">Result: <span id="maxResult" class="font-bold"></span></p>
+        </div>
+
+        <!-- Find Minimum -->
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-bold mb-4">Find Minimum</h3>
+          <input type="text" id="minInput" placeholder="Enter numbers (e.g., 1,2,3)" class="w-full p-2 border rounded-lg mb-4">
+          <button onclick="findMin()" class="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600">Find Min</button>
+          <p class="mt-4">Result: <span id="minResult" class="font-bold"></span></p>
+        </div>
+
+        <!-- Sum of Array -->
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-bold mb-4">Sum of Array</h3>
+          <input type="text" id="sumInput" placeholder="Enter numbers (e.g., 1,2,3)" class="w-full p-2 border rounded-lg mb-4">
+          <button onclick="sumArray()" class="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600">Sum</button>
+          <p class="mt-4">Result: <span id="sumResult" class="font-bold"></span></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mathematical Functions -->
+    <section class="mb-8">
+      <h2 class="text-2xl font-bold mb-4">Mathematical Functions</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Factorial -->
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-bold mb-4">Factorial</h3>
+          <input type="number" id="factorialInput" placeholder="Enter a number" class="w-full p-2 border rounded-lg mb-4">
+          <button onclick="calculateFactorial()" class="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600">Calculate</button>
+          <p class="mt-4">Result: <span id="factorialResult" class="font-bold"></span></p>
+        </div>
+
+        <!-- Prime Number Check -->
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-bold mb-4">Prime Number Check</h3>
+          <input type="number" id="primeInput" placeholder="Enter a number" class="w-full p-2 border rounded-lg mb-4">
+          <button onclick="checkPrime()" class="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600">Check</button>
+          <p class="mt-4">Result: <span id="primeResult" class="font-bold"></span></p>
+        </div>
+
+        <!-- Fibonacci Sequence -->
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-bold mb-4">Fibonacci Sequence</h3>
+          <input type="number" id="fibonacciInput" placeholder="Enter number of terms" class="w-full p-2 border rounded-lg mb-4">
+          <button onclick="generateFibonacci()" class="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600">Generate</button>
+          <p class="mt-4">Result: <span id="fibonacciResult" class="font-bold"></span></p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
