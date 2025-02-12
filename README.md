@@ -37,3 +37,5 @@ This is a **web application** built with **JavaScript** and **Tailwind CSS** tha
    ```bash
    git clone https://github.com/idrissbado/javascriptprogramming.git
    cd javascriptprogramming
+   ##  visit the solution
+   https://idrissbado.github.io/javascriptprogramming/
